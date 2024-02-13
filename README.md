@@ -18,11 +18,9 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 2. Crie um um arquivo readme.md descrevendo o passo a passo para se configurar uma pesquisa, assim como seus insights, possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta e aprendizados adquiridos durante o processo.
 3. Compartilhe conosco o link desse repositório através do botão 'entregar projeto'
 
-# Links úteis
+# Link útil
 
 1. https://aka.ms/ai900-ai-search
-2. https://microsoftlearning.github.io/AI-900-AIFundamentals/instructions/03e-analyze-receipts.html
-3. https://learn.microsoft.com/en-us/training/paths/document-intelligence-knowledge-mining/
 
 # Crie um um arquivo readme.md descrevendo o passo a passo para se configurar uma pesquisa, assim como seus insights, possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta e aprendizados adquiridos durante o processo.
 
