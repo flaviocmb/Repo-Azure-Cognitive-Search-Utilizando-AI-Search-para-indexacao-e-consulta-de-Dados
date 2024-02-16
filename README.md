@@ -81,11 +81,23 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 |:--------:|:--------:|:--------:|
 |![Imagem 9](./imagens/imagem9.png)|![Imagem 10](./imagens/imagem10.png)|![Imagem 11](./imagens/imagem11.png)|
 
-5. Após criar um **storage account**, acesse as configurações do seu storage account e altere a opção **Allow Blob anonymous access** para **Enabled** e salve. ⚠️
+5. Após criar um **storage account**, no menu lateral esquerdo, acesse as configurações do seu storage account e altere a opção **Allow Blob anonymous access** para **Enabled** e salve. ⚠️
 
-| 4.1 | 4.2 |
+| 5.1 | 5.2 |
 |:--------:|:--------:|
 |![Imagem 12](./imagens/imagem12.png)|![Imagem 13](./imagens/imagem13.png)|
+
+#### Adicionar documentos ao Azure Storage
+
+6. Dentro do seu recurso **Azure Storage Account**, no menu lateral esquerdo, acesse **Containers**, selecione **+ Container**. Vai abrir um menu lateral à direita. Preencha as informações como fornecido abaixo:
+
+* **Name**: coffee-reviews.
+* **Public access level**: Container (anonymous read access for containers and blobs).
+* **Advanced**: no changes.
+
+| 6.1 | 6.2 |
+|:--------:|:--------:|
+|![Imagem 14](./imagens/imagem14.png)|![Imagem 15](./imagens/imagem15.png)|
 
 ### Insights
 
