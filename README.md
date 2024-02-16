@@ -26,6 +26,18 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 
 ### Passo a passo para se configurar uma pesquisa
 
+* Criar um recurso Azure AI Search
+* Criar um recurso Azure AI services
+* Criar um Storage Account
+* Adicionar documentos ao Azure Storage
+* Indexar os documentos
+* Consultar o índice
+* Revisar o knowledge store
+
+#### Crie um recuros Azure AI Search
+
+
+
 ### Insights
 
 ### Possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta
