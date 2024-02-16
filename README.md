@@ -40,6 +40,7 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 
 1. Esteja logado no [Portal Azure](https://portal.azure.com).
 2. Clique em **+ Create a resource**, procure e crie um **Azure AI Search** com as configurações abaixo:
+
 	* **Subscription**: Your Azure subscription.
 	* **Resource group**: Select or create a resource group with a unique name.
 	* **Service name**: A unique name.
@@ -53,6 +54,7 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 #### Criar um recurso Azure AI services
 
 3. Retorne ao início do [Portal Azure](https://portal.azure.com) e clique novamente em **+ Create a resource**, procure e crie um **Azure AI services** com as configurações abaixo:
+
 	* **Subscription**: Your Azure subscription.
 	* **Resource group**: The same resource group as your Azure AI Search resource.
 	* **Region**: The same location as your Azure AI Search resource.
@@ -68,6 +70,7 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 #### Criar um Storage Account
 
 4. Retorne ao início do [Portal Azure](https://portal.azure.com) e clique novamente em **+ Create a resource**, procure e crie um **storage account** com as configurações abaixo:
+
 	* **Subscription**: Your Azure subscription.
 	* **Resource group**: The same resource group as your Azure AI Search and Azure AI services resources.
 	* **Storage account name**: A unique name.
@@ -75,6 +78,9 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 	* **Performance**: Standard.
 	* **Redundancy**: Locally redundant storage (LRS).
 
+| 4.1 | 4.2 | 4.3 |
+|:--------:|:--------:|:--------:|
+|![Imagem 9](./imagens/imagem9.png)|![Imagem 10](./imagens/imagem10.png)|![Imagem 11](./imagens/imagem11.png)|
 
 ### Insights
 
