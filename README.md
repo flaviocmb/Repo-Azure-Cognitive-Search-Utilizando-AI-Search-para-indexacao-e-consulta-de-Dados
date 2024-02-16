@@ -274,8 +274,6 @@ A consulta retorna filtros de review baseado na localidade **Los Angeles**. Obse
 }
 ```
 
-The query searches all the documents in the index and filters for reviews with a negative sentiment. You should see 1 in the @odata.count field.
-
 A consulta retorna filtros de view com **sentimento negativo**. Observe o número 1 no campo **@odata.count**.
 
 Veja como os resultados são classificados por **@search.score**. Essa é a pontuação atribuída pelo mecanismo de pesquisa para mostrar o quão próximos os resultados correspondem à consulta fornecida.
@@ -290,7 +288,7 @@ Observe os comentários negativos em **content**. Esses comentários estão asso
 
 Quando você executou o *Import data wizard*, você criou um **knowledge store**. Dentro dele, você vai encontrar os dados enriquecidos extraídos pelas habilidades da IA que persistem na forma de projeções e tabelas.
 
-29. No [Portal Azure](https://portal.azure.com), navegue de volta ao seu **Azure storage account**. No menu lateral esquerdo, selecione **Containers**, Clique no container **knowledge-store**.
+29. Na home do [Portal Azure](https://portal.azure.com), navegue de volta ao seu **Azure storage account**. No menu lateral esquerdo, selecione **Containers**, Clique no container **knowledge-store**.
 
 | 29.1 |
 |:--------:|
