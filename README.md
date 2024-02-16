@@ -113,6 +113,63 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 |:--------:|:--------:|
 |![Imagem 20](./imagens/imagem20.png)|![Imagem 21](./imagens/imagem21.png)|
 
+#### Indexar os documentos
+
+Depois de armazenar os documentos, você poderá usar o **Azure AI Search** para extrair insights dos documentos. O portal do Azure fornece um *Import data wizard*. Com esse wizard, você pode criar automaticamente um index (índice) e um indexer (indexador) para fontes de dados suportadas. Você usará o wizard para criar um index e importar seus documentos de opiniões do armazenamento para o index do **Azure AI Search**.
+
+10. No [Portal Azure](https://portal.azure.com), navegue até o recurso criado **Azure AI Search** e selecione o botão **Import data**.
+
+| 10.1 |
+|:--------:|
+|![Imagem 22](./imagens/imagem22.png)|
+
+11. Na guia **Connect to your data**, observe a lista em drop-down **Data Source**, selecione **Azure Blob Storage**. Complete as informações como mostrado abaixo:
+
+	* **Data Source**: Azure Blob Storage
+	* **Data source name**: coffee-customer-data
+	* **Data to extract**: Content and metadata
+	* **Parsing mode**: Default
+	* **Connection string**: Select Choose an existing connection. Select your storage account, select the coffee-reviews container, and then click Select.
+	* **Managed identity authentication**: None
+	* **Container name**: this setting is auto-populated after you choose an existing connection.
+	* **Blob folder**: Leave this blank.
+	* **Description**: Reviews for Fourth Coffee shops.
+
+| 11.1 | 11.2 | 11.3 | 11.4 |
+|:--------:|:--------:|:--------:|:--------:|
+|![Imagem 23](./imagens/imagem23.png)|![Imagem 24](./imagens/imagem24.png)|![Imagem 25](./imagens/imagem25.png)|![Imagem 26](./imagens/imagem26.png)|
+
+12. Clique em **Next: Add cognitive skills (Optional)**.
+
+| 12.1 |
+|:--------:|
+|![Imagem 27](./imagens/imagem27.png)|
+
+13. Na seção **Attach Cognitive Services**, selecione o seu recuros Azure AI services.
+
+14. Na seção **Add enrichments**:
+
+	* Change the Skillset name to **coffee-skillset**.
+	* Select the checkbox **Enable OCR and merge all text into merged_content field**.
+	* Ensure that the Source data field is set to **merged_content**.
+	* Change the Enrichment granularity level to Pages (5000 character chunks).
+	* Don’t select *Enable incremental enrichment*.
+	* Select the following enriched fields: (ver foto xx)
+
+15. Na seção **Save enrichments to a knowledge store**, selecione:
+
+	* Image projections
+	* Documents
+	* Pages
+		* Key phrases
+		* Entities
+	* Image details
+		* Image references
+
+16. Ainda na seção **Save enrichments to a knowledge store**, selecione **Azure blob projections: Document**. Aparecerá o container recém criado knowledge-store, não altere esse nome mostrado.
+
+17. Selecione **Next: Customize target index**, Altere o **Index name** para **coffee-index**.
+
 ### Insights
 
 ### Possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta
