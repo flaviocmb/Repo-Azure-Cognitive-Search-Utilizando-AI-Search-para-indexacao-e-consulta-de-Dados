@@ -24,6 +24,8 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 
 # Crie um arquivo readme.md descrevendo o passo a passo para se configurar uma pesquisa, assim como seus insights, possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta e aprendizados adquiridos durante o processo.
 
+⭐️ A minha sugestão é deixar toda a plataforma em inglês ⭐️
+
 ### Passo a passo para se configurar uma pesquisa
 
 * Criar um recurso Azure AI Search
@@ -51,16 +53,27 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 #### Criar um recurso Azure AI services
 
 3. Retorne ao início do [Portal Azure](https://portal.azure.com) e clique novamente em **+ Create a resource**, procure e crie um **Azure AI services** com as configurações abaixo:
-* **Subscription**: Your Azure subscription.
-* **Resource group**: The same resource group as your Azure AI Search resource.
-* **Region**: The same location as your Azure AI Search resource.
-* **Name**: A unique name.
-* **Pricing tier**: Standard S0
-* **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
+	* **Subscription**: Your Azure subscription.
+	* **Resource group**: The same resource group as your Azure AI Search resource.
+	* **Region**: The same location as your Azure AI Search resource.
+	* **Name**: A unique name.
+	* **Pricing tier**: Standard S0.
+	* **By checking this box I acknowledge that I have read and understood all the terms below**: Selected.
 
 | 3.1 | 3.2 | 3.3 |
 |:--------:|:--------:|:--------:|
 |![Imagem 6](./imagens/imagem6.png)|![Imagem 7](./imagens/imagem7.png)|![Imagem 8](./imagens/imagem8.png)|
+
+
+#### Criar um Storage Account
+
+4. Retorne ao início do [Portal Azure](https://portal.azure.com) e clique novamente em **+ Create a resource**, procure e crie um **storage account** com as configurações abaixo:
+	* **Subscription**: Your Azure subscription.
+	* **Resource group**: The same resource group as your Azure AI Search and Azure AI services resources.
+	* **Storage account name**: A unique name.
+	* **Location**: Choose any available location.
+	* **Performance**: Standard.
+	* **Redundancy**: Locally redundant storage (LRS).
 
 
 ### Insights
