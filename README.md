@@ -36,9 +36,13 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 * Consultar o índice
 * Revisar o knowledge store
 
+| Modelo de documento a ser analisado |
+|:--------:|
+|![Imagem 1](./imagens/imagem1.png)|
+
 #### Crie um recuros Azure AI Search
 
-1. Esteja logado no [Portal Azure](https://portal.azure.com).
+1. Fique logado no [Portal Azure](https://portal.azure.com).
 2. Clique em **+ Create a resource**, procure e crie um **Azure AI Search** com as configurações abaixo:
 
 	* **Subscription**: Your Azure subscription.
@@ -322,7 +326,7 @@ Há uma tabela para cada entidade no index.
 
 34. Selecione a tabela **coffeeSkillsetKeyPhrases**.
 
-Observe os **key phrases** que o **knowledge store** conseguiu capturar do conteúdo das reviews. Muitos dos campos são keys, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra os **key phrases** que foram extraídos pelo skillset.
+Observe os **key phrases** que o **knowledge store** conseguiu capturar do conteúdo das reviews. Muitos dos campos são keys, portanto você pode vincular as tabelas como um banco de dados relacional. A última coluna mostra os **key phrases** que foram extraídos pelo skillset.
 
 | 34.1 | 34.2 |
 |:--------:|:--------:|
