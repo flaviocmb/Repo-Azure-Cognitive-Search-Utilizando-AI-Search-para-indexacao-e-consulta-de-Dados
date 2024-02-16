@@ -197,6 +197,34 @@ Depois de armazenar os documentos, você poderá usar o **Azure AI Search** para
 
 18. Na etapa seguinte, altere o **Index name** para **coffee-index**.
 
+19. Garanta que o campo **Key** esteja configurado para **metadata_storage_path**. Deixe o **Suggester name** em branco e **Search mode** autopreenchido.
+
+20. Observe com atenção as informações preenchidas das etapas 18 e 19 até aqui.
+
+| 20.1 |
+|:--------:|
+|![Imagem 39](./imagens/imagem39.png)|
+
+21. Selecione o checkbox **filterable** para todos os campos que já estão selecionados por padrão. Observe a imagem.
+
+| 21.1 |
+|:--------:|
+|![Imagem 40](./imagens/imagem40.png)|
+
+22. Clique em **Next: Create an indexer**.
+
+23. Altere o *Indexer name* para **coffee-indexer**. Deixe o *Schedule* configurado para **Once**. Verifique se o **Base-64 Encode Keys** está selecionado em **Advanced options**. Clique em **Submit**.
+
+| 23.1 |
+|:--------:|
+|![Imagem 41](./imagens/imagem41.png)|
+
+24. Retorne à página do seu recurso **Azure AI Search**. No menu lateral esquerdo, abaixo de **Search Management**, selecione **Indexers**. Selecione o recém-criado **coffee-indexer**, aguarde até visualizar o **Status** indicar success ✅. Acesse o indexer **coffee-indexer** para visualizar os detalhes.
+
+| 24.1 | 24.2 |
+|:--------:|:--------:|
+|![Imagem 42](./imagens/imagem42.png)|![Imagem 43](./imagens/imagem43.png)|
+
 ### Insights
 
 ### Possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta
