@@ -99,6 +99,20 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 |:--------:|:--------:|
 |![Imagem 14](./imagens/imagem14.png)|![Imagem 15](./imagens/imagem15.png)|
 
+7. Em uma nova janela do seu navegador, acesse esse [link](https://aka.ms/mslearn-coffee-reviews) para fazer o download dos arquivos de exemplo.
+
+8. Ainda na sessão de **Containers**, acesse o container recém criado **coffee-reviews** e clique em **Upload**. Uma janela à direita se abrirá e você deverá selecionar os arquivos baixados e descompactados do passo anterior no seu computador.
+
+| 8.1 | 8.2 | 8.3 | 8.4 |
+|:--------:|:--------:|:--------:|:--------:|
+|![Imagem 16](./imagens/imagem16.png)|![Imagem 17](./imagens/imagem17.png)|![Imagem 18](./imagens/imagem18.png)|![Imagem 19](./imagens/imagem19.png)|
+
+9. Após isso, clique em Upload, dessa janela, para adicionar os documentos com as opiniões dos clientes para o container.
+
+| 9.1 | 9.2 |
+|:--------:|:--------:|
+|![Imagem 20](./imagens/imagem20.png)|![Imagem 21](./imagens/imagem21.png)|
+
 ### Insights
 
 ### Possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta
