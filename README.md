@@ -36,6 +36,31 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 
 #### Crie um recuros Azure AI Search
 
+1. Esteja logado no [Portal Azure](https://portal.azure.com).
+2. Clique em **+ Create a resource**, procure e crie um **Azure AI Search** com as configurações abaixo:
+	* **Subscription**: Your Azure subscription.
+	* **Resource group**: Select or create a resource group with a unique name.
+	* **Service name**: A unique name.
+	* **Location**: Choose any available region.
+	* **Pricing tier**: Basic.
+
+| 2.1 | 2.2 | 2.3 | 2.4 |
+|:--------:|:--------:|:--------:|:--------:|
+|![Imagem 2](./imagens/imagem2.png)|![Imagem 3](./imagens/imagem3.png)|![Imagem 4](./imagens/imagem4.png)|![Imagem 5](./imagens/imagem5.png)|
+
+#### Criar um recurso Azure AI services
+
+3. Retorne ao início do [Portal Azure](https://portal.azure.com) e clique novamente em **+ Create a resource**, procure e crie um **Azure AI services** com as configurações abaixo:
+* **Subscription**: Your Azure subscription.
+* **Resource group**: The same resource group as your Azure AI Search resource.
+* **Region**: The same location as your Azure AI Search resource.
+* **Name**: A unique name.
+* **Pricing tier**: Standard S0
+* **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
+
+| 3.1 | 3.2 | 3.3 |
+|:--------:|:--------:|:--------:|
+|![Imagem 6](./imagens/imagem6.png)|![Imagem 7](./imagens/imagem7.png)|![Imagem 8](./imagens/imagem8.png)|
 
 
 ### Insights
