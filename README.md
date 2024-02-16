@@ -225,6 +225,111 @@ Depois de armazenar os documentos, você poderá usar o **Azure AI Search** para
 |:--------:|:--------:|
 |![Imagem 42](./imagens/imagem42.png)|![Imagem 43](./imagens/imagem43.png)|
 
+#### Consultar o índice
+
+Use o **Search Explorer** para escrever e testar consultas. Você pode usar o **Search Explorer** para escrever consultas e revisar resultados em **JSON**.
+
+25. Na página de Overview do recurso **Search service** que você criou, selecione **Search explorer** nas guias superiores.
+
+| 25.1 |
+|:--------:|
+|![Imagem 43](./imagens/imagem43.png)|
+
+26. Observando que o **coffee-index** é o index selecionado, altere a visualização de query view para **JSON view**, copie e cole o trecho de código abaixo e clique em **Search**.
+
+```json
+{
+    "search": "*",
+    "count": true
+}
+```
+
+A consulta retorna todos os documentos, incluindo uma contagem de todos os documentos no campo **@odata.count**. Essa consulta está descrita no formato JSON.
+
+| 26.1 | 26.2 | 26.3 | 26.4 |
+|:--------:|:--------:|:--------:|:--------:|
+|![Imagem 44](./imagens/imagem44.png)|![Imagem 45](./imagens/imagem45.png)|![Imagem 46](./imagens/imagem46.png)|![Imagem 47](./imagens/imagem47.png)|
+
+27. Filtre por localidade. No campo **JSON query editor**, copie e cole o trecho de código abaixo e clique em **Search**.
+
+```json
+{
+ "search": "locations:'Los Angeles'",
+ "count": true
+}
+```
+
+A consulta retorna filtros de review baseado na localidade **Los Angeles**. Observe o número 2 no campo **@odata.count**.
+
+| 27.1 |
+|:--------:|
+|![Imagem 48](./imagens/imagem48.png)|
+
+28. Agora filtre por **sentimento**. No campo **JSON query editor**, copie e cole o trecho de código abaixo e clique em **Search**.
+
+```json
+{
+ "search": "sentiment:'negative'",
+ "count": true
+}
+```
+
+The query searches all the documents in the index and filters for reviews with a negative sentiment. You should see 1 in the @odata.count field.
+
+A consulta retorna filtros de view com **sentimento negativo**. Observe o número 1 no campo **@odata.count**.
+
+Veja como os resultados são classificados por **@search.score**. Essa é a pontuação atribuída pelo mecanismo de pesquisa para mostrar o quão próximos os resultados correspondem à consulta fornecida.
+
+Observe os comentários negativos em **content**. Esses comentários estão associados aos **key phrases**. Isso ajuda a entender a causa dos reviews negativos.
+
+| 28.1 |
+|:--------:|
+|![Imagem 49](./imagens/imagem49.png)|
+
+#### Revisar o knowledge store
+
+Quando você executou o *Import data wizard*, você criou um **knowledge store**. Dentro dele, você vai encontrar os dados enriquecidos extraídos pelas habilidades da IA que persistem na forma de projeções e tabelas.
+
+29. No [Portal Azure](https://portal.azure.com), navegue de volta ao seu **Azure storage account**. No menu lateral esquerdo, selecione **Containers**, Clique no container **knowledge-store**.
+
+| 29.1 |
+|:--------:|
+|![Imagem 50](./imagens/imagem50.png)|
+
+30. Selecione qualquer pasta, depois clique no arquivo **objectprojection.json**. Selecione **Edit** e observe o JSON gerado para um dos documentos de review dos clientes direto do seu **Azure data store**.
+
+| 30.1 | 30.2 | 30.3 | 30.4 |
+|:--------:|:--------:|:--------:|:--------:|
+|![Imagem 51](./imagens/imagem51.png)|![Imagem 52](./imagens/imagem52.png)|![Imagem 53](./imagens/imagem53.png)|![Imagem 54](./imagens/imagem54.png)|
+
+31. Retorne ao seu **Storage account Containers** por meio do *breadcrumb* na guia superior esquerda da tela.
+
+| 31.1 |
+|:--------:|
+|![Imagem 55](./imagens/imagem55.png)|
+
+32. Selecione o container **coffee-skillset-image-projection**. Clique em qualquer arquivo e depois selecione qualquer arquivo .jpg. Clique em **Edit** para visualizar uma imagem armazenada no documento fornecido no **Azure data store**.
+
+| 32.1 | 32.2 | 32.3 | 32.4 | 32.5 |
+|:--------:|:--------:|:--------:|:--------:|:--------:|
+|![Imagem 56](./imagens/imagem56.png)|![Imagem 57](./imagens/imagem57.png)|![Imagem 58](./imagens/imagem58.png)|![Imagem 59](./imagens/imagem59.png)|![Imagem 60](./imagens/imagem60.png)|
+
+33. Retorne novamente ao seu **Storage account Containers**. Selecione **Storage browser** no menu lateral esquerdo, depois selecione **Tables**.
+
+Há uma tabela para cada entidade no index. 
+
+| 33.1 | 33.2 |
+|:--------:|:--------:|
+|![Imagem 61](./imagens/imagem61.png)|![Imagem 62](./imagens/imagem62.png)|
+
+34. Selecione a tabela **coffeeSkillsetKeyPhrases**.
+
+Observe os **key phrases** que o **knowledge store** conseguiu capturar do conteúdo das reviews. Muitos dos campos são keys, portanto você pode vincular as tabelas como um banco de dados relacional. O último campo mostra os **key phrases** que foram extraídos pelo skillset.
+
+| 34.1 | 34.2 |
+|:--------:|:--------:|
+|![Imagem 63](./imagens/imagem63.png)|![Imagem 64](./imagens/imagem64.png)|
+
 ### Insights
 
 ### Possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta
