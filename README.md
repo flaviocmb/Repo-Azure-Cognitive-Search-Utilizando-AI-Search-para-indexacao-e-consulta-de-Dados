@@ -66,7 +66,6 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 |:--------:|:--------:|:--------:|
 |![Imagem 6](./imagens/imagem6.png)|![Imagem 7](./imagens/imagem7.png)|![Imagem 8](./imagens/imagem8.png)|
 
-
 #### Criar um Storage Account
 
 4. Retorne ao início do [Portal Azure](https://portal.azure.com) e clique novamente em **+ Create a resource**, procure e crie um **storage account** com as configurações abaixo:
@@ -81,6 +80,12 @@ Chegou a hora de você construir um portfólio ainda mais rico e impressionar fu
 | 4.1 | 4.2 | 4.3 |
 |:--------:|:--------:|:--------:|
 |![Imagem 9](./imagens/imagem9.png)|![Imagem 10](./imagens/imagem10.png)|![Imagem 11](./imagens/imagem11.png)|
+
+5. Após criar um **storage account**, acesse as configurações do seu storage account e altere a opção **Allow Blob anonymous access** para **Enabled** e salve. ⚠️
+
+| 4.1 | 4.2 |
+|:--------:|:--------:|
+|![Imagem 12](./imagens/imagem12.png)|![Imagem 13](./imagens/imagem13.png)|
 
 ### Insights
 
