@@ -147,18 +147,31 @@ Depois de armazenar os documentos, você poderá usar o **Azure AI Search** para
 
 13. Na seção **Attach Cognitive Services**, selecione o seu recuros Azure AI services.
 
+| 13.1 |
+|:--------:|
+|![Imagem 28](./imagens/imagem28.png)|
+
 14. Na seção **Add enrichments**:
 
 	* Change the Skillset name to **coffee-skillset**.
 	* Select the checkbox **Enable OCR and merge all text into merged_content field**.
 	* Ensure that the Source data field is set to **merged_content**.
-	* Change the Enrichment granularity level to Pages (5000 character chunks).
+	* Change the Enrichment granularity level to **Pages (5000 character chunks)**.
 	* Don’t select *Enable incremental enrichment*.
-	* Select the following enriched fields: (ver foto xx)
+	* Select the following enriched fields: ⚠️ **(ver imagem 14.2)**.
+
+| 14.1 | 14.2 |
+|:--------:|:--------:|
+|![Imagem 29](./imagens/imagem29.png)|![Imagem 30](./imagens/imagem30.png)|
 
 15. Na seção **Save enrichments to a knowledge store**, selecione:
 
 	* Image projections
+		* ⚠️ Uma mensagem de alerta aparecerá em vermelho (ver imagem 15.2) perguntando sobre *Storage Account Connection String*, siga esses passos:
+			1. Select **Choose an existing connection**. 
+			2. Choose the storage account you created earlier.
+			3. Click on **+ Container** to create a new container called knowledge-store with the privacy level set to Private, and select Create.
+			4. Select the knowledge-store container, and then click Select at the bottom of the screen.
 	* Documents
 	* Pages
 		* Key phrases
@@ -166,9 +179,23 @@ Depois de armazenar os documentos, você poderá usar o **Azure AI Search** para
 	* Image details
 		* Image references
 
+| 15.1 | 15.2 | 15.3 | 15.4 | 15.5 | 15.6 |
+|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|![Imagem 31](./imagens/imagem31.png)|![Imagem 32](./imagens/imagem32.png)|![Imagem 33](./imagens/imagem33.png)|![Imagem 34](./imagens/imagem34.png)|![Imagem 35](./imagens/imagem35.png)|![Imagem 36](./imagens/imagem36.png)|
+
 16. Ainda na seção **Save enrichments to a knowledge store**, selecione **Azure blob projections: Document**. Aparecerá o container recém criado knowledge-store, não altere esse nome mostrado.
 
-17. Selecione **Next: Customize target index**, Altere o **Index name** para **coffee-index**.
+| 16.1 |
+|:--------:|
+|![Imagem 37](./imagens/imagem37.png)|
+
+17. Observe todas as configurações realizadas e selecione **Next: Customize target index**.
+
+| 17.1 |
+|:--------:|
+|![Imagem 38](./imagens/imagem38.png)|
+
+18. Na etapa seguinte, altere o **Index name** para **coffee-index**.
 
 ### Insights
 
