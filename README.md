@@ -15,13 +15,19 @@ Três **recursos** são importantes para esse experimento:
 Chegou a hora de você construir um portfólio ainda mais rico e impressionar futuros recrutadores, para isso é sempre importante mostrar os resultados do seu esforço e como você os obteve deixando claro o seu racional, para isso faça da seguinte maneira:
 
 1. Crie um novo repositório no github com um nome a sua preferência
-2. Crie um um arquivo readme.md descrevendo o passo a passo para se configurar uma pesquisa, assim como seus insights, possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta e aprendizados adquiridos durante o processo.
+2. Crie um arquivo readme.md descrevendo o passo a passo para se configurar uma pesquisa, assim como seus insights, possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta e aprendizados adquiridos durante o processo.
 3. Compartilhe conosco o link desse repositório através do botão 'entregar projeto'
 
 # Link útil
 
 1. https://aka.ms/ai900-ai-search
 
-# Crie um um arquivo readme.md descrevendo o passo a passo para se configurar uma pesquisa, assim como seus insights, possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta e aprendizados adquiridos durante o processo.
+# Crie um arquivo readme.md descrevendo o passo a passo para se configurar uma pesquisa, assim como seus insights, possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta e aprendizados adquiridos durante o processo.
 
-#### Insights e possibilidades
+### Passo a passo para se configurar uma pesquisa
+
+### Insights
+
+### Possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta
+
+### Aprendizados adquiridos
