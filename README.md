@@ -334,6 +334,23 @@ Observe os **key phrases** que o **knowledge store** conseguiu capturar do conte
 
 ### Insights
 
+Com base nos dois projetos anteriores, em que desenvolvi soluções para monitorar a atividade do meu cachorro:
+
+* [Reconhecimento Facial e Transformação de Imagens em Dados no Azure ML](https://github.com/flaviocmb/Repo-Reconhecimento-Facial-e-transforma-o-de-imagens-em-Dados-no-Azure-ML)
+* [Análise de Sentimentos com Language Studio no Azure AI](https://github.com/flaviocmb/Repo-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI)
+
+Agora, é possível utilizar o **Azure Cognitive Search** para indexar e pesquisar dados relacionados ao comportamento e saúde do cachorro. Por exemplo, posso armazenar dados de atividade, como tempo de sono, tempo de brincadeira e padrões alimentares, e usar o **Azure Cognitive Search** para pesquisar esses dados e obter insights sobre o bem-estar do cachorro.
+
 ### Possibilidades de ferramentas que se beneficiam com esse tipo de ferramenta
 
+Você pode usar câmeras IP ou outras câmeras de segurança conectadas à internet para fornecer uma visão ao vivo do que está acontecendo em casa enquanto você está fora.
+
+Integre recursos de reconhecimento de imagem e vídeo ao seu sistema para identificar automaticamente seu cachorro e outras pessoas ou objetos em casa. Isso pode ajudar a me alertar se algo incomum acontecer ou se o meu cachorro precisar de atenção específica.
+
+Outra possibilidade é permitir que veterinários possam entender problemas do animal com objetivos personalizados de tratamento. Nesse caso, as clínicas se beneficiam de uma ferramenta específica para esse segmento.
+
 ### Aprendizados adquiridos
+
+O passo a passo do guia para utilizar os três recursos me ajudou a entender o poder da tecnologia do **AI Search**. Os modelos de exemplo para analisar sentimento é simples e muito claro para entendermos e tirarmos ideias importantes para usar no dia a dia.
+
+No meu caso específico, eu combinaria a vigilância por câmera com recursos avançados de pesquisa de dados, para treinar modelos de IA a reconhecer comportamentos específicos do cachorro e aprender com base em padrões identificados ao longo do tempo. Não seriam arquivos de documentos, mas utilizando as outras tecnologias dos demais projetos e enriquecer esses dados.
